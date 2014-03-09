@@ -6,9 +6,23 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+<% if not flash[:notice].nil? %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 
 <%= yield %>
+
+<div class="sidebar two columns">
+  <nav>
+    <ul>
+      <li><%= link_to "New post...", new_post_path %></li>
+    </ul>
+  </nav>
+</div>
 
 </body>
 </html>

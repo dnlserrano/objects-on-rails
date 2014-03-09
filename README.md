@@ -3,4 +3,4 @@ objects-on-rails
 
 rails tutorial from http://objectsonrails.com/
 
-i'm on [page 17](http://objectsonrails.com/#sec-6)
+i'm on [page 28](http://objectsonrails.com/#sec-10)
